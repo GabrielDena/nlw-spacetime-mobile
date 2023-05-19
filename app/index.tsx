@@ -53,7 +53,6 @@ export default function App() {
     }
 
     React.useEffect(() => {
-        console.log(response);
         if (response?.type === 'success') {
             const { code } = response.params;
             handleGithubOauthCode(code);
